@@ -294,7 +294,9 @@ Median_steps_prim
 ## [1] 10766.19
 ```
 
-As we can see, the changes are minor or nonexistent. In the case of the mean we do not observe any changes. In the case of the median there is a slight difference. It was **10765** in the dataset without NAs and **10766.19** in the dataset with the replacement for NAs. 
+As we can see, the changes are minor or nonexistent. In the case of the mean we do not observe any changes which is logical given that we added only values equal to the previous mean. In the case of the median there is a slight difference. It was **10765** in the dataset without NAs and **10766.19** in the dataset with the replacement for NAs. This also is not very surprising given that the value of mean was added multiple times to the new dataset.
+
+The overall impact is that one value accounts for the whole increase which can be clearly seen on the histogram. The distribution becomes more center-oriented.  
 
 
 ## Are there differences in activity patterns between weekdays and weekends?
